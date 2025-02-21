@@ -145,18 +145,26 @@ nav ul {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-    section {
-        padding: 15px;
-        margin: 10px;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
+    header, nav, section, footer, .mobile-menu { 
+        padding: 10px;
+        margin: 0 5px;
+    } 
     h1 { font-size: 2em; } 
-    h2 { font-size: 1.3em; }
-    p { font-size: 1em; }
+    h2 { font-size: 1.2em; } 
+    .foto-perfil { max-width: 150px; } 
+    .proyecto { padding: 10px; } 
+
+    nav { 
+        display: none; 
+    }
+    .mobile-menu { 
+        display: block; 
+        background: #1C3FAA;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 .menu-toggle {
