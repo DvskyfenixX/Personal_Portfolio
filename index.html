@@ -14,6 +14,7 @@
         </div>
     </header>
     <nav>
+        <button class="menu-toggle">☰</button>
         <div class="mobile-menu">
             <ul>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -117,4 +118,9 @@
         <p>&copy; 2025 Benjamín Ismael Ruiz Salvatierra</p>
     </footer>
 </body>
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.toggle('active');
+    });
+</script>
 </html>
